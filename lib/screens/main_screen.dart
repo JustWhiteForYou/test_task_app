@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
         onTap: () {
           setState(
             () {
-              backgroundColor = changeBackgroundColor();
+              backgroundColor = randomColor();
             },
           );
         },
