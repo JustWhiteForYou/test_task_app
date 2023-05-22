@@ -14,6 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         centerTitle: true,
         title: const Text('Test Task'),
@@ -38,16 +39,13 @@ class _MainScreenState extends State<MainScreen> {
             },
           );
         },
-        child: Container(
-          color: backgroundColor,
-          child: const Center(
-            child: Text(
-              'Hello there',
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-                color: Color.fromRGBO(240, 83, 21, 1),
-              ),
+        child: const Center(
+          child: Text(
+            'Hello there',
+            style: TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+              color: Color.fromRGBO(240, 83, 21, 1),
             ),
           ),
         ),
