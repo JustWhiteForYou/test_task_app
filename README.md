@@ -1,16 +1,7 @@
 # test_task
 
-A new Flutter project.
 
-## Getting Started
+## Preview
 
-This project is a starting point for a Flutter application.
+ ![ezgif com-video-to-gif](https://github.com/JustWhiteForYou/test_task_app/assets/125287617/9c78ba76-d8ce-4872-9660-7644509be1b5)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
