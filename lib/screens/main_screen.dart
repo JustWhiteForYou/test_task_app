@@ -10,6 +10,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   Color backgroundColor = const Color.fromRGBO(20, 24, 36, 1);
+  List<String> testText = ['Hello There'];
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +36,25 @@ class _MainScreenState extends State<MainScreen> {
         onTap: () {
           setState(
             () {
-              backgroundColor = randomColor();
+              backgroundColor = ColorChanger.randomColor();
             },
           );
         },
-        child: const Center(
-          child: Text(
-            'Hello there',
-            style: TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              color: Color.fromRGBO(240, 83, 21, 1),
+        child: Center(
+          child: RichText(
+            // Тут використовуємо RichText та TextSpan для того щоб передати кастомний колір в кожну літеру
+            text: TextSpan(
+              children: List.generate(
+                //List.generate для створення фіксованого списку
+                testText[0].length,
+                (index) => TextSpan(
+                  text: testText[0][index],
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: ColorChanger.randomColor(),
+                  ),
+                ),
+              ),
             ),
           ),
         ),
